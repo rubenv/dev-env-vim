@@ -30,4 +30,6 @@ TERM=xterm-256color
 alias vim='nvim'
 alias sh='bash'
 
-export EDITOR TERM
+GOPATH=/go
+
+export EDITOR TERM GOPATH
