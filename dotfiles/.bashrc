@@ -12,7 +12,7 @@ if [ "$TERM" != "dumb" ]; then
 	alias grep='grep --color=auto'
 fi
 
-PS1='\[\033[01;32m\]vim'
+PS1='\[\033[01;32m\]\h'
 
 parse_git_branch() {
   /usr/bin/git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
