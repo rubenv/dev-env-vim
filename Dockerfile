@@ -7,7 +7,9 @@ RUN dnf -y install git bash-completion which && \
     dnf -y install python-pip python-devel gcc redhat-rpm-config && \
     pip install neovim && \
     dnf -y remove python-devel gcc redhat-rpm-config && \
-    dnf clean all
+    dnf clean all && \
+    git config --global user.email "ruben@rocketeer.be" && \
+    git config --global user.name "Ruben Vermeersch"
 
 ADD dotfiles/ /root/
 
