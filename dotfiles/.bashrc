@@ -28,6 +28,7 @@ HISTSIZE=4096000
 EDITOR=$(which nvim)
 TERM=xterm-256color
 alias vim='nvim'
+alias vi='nvim'
 alias sh='bash'
 
 GOPATH=/go
